@@ -15,13 +15,6 @@ class LocationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func AfricaButtonPressed(sender: UIButton) {
-        //go to next view with africa video
-        
-        
-        
-    }
     
 
     /*

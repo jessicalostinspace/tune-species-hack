@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H54-W7-aR5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,63 +23,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Location View Controller-->
-        <scene sceneID="tMs-W4-KAe">
+        <!--Youtube View Controller-->
+        <scene sceneID="IR4-YM-DVH">
             <objects>
-                <viewController id="tGz-AA-8pk" customClass="LocationViewController" customModule="cardboard_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H54-W7-aR5" customClass="YoutubeViewController" customModule="cardboard_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rnn-vq-bMx"/>
-                        <viewControllerLayoutGuide type="bottom" id="hjh-xt-qiF"/>
+                        <viewControllerLayoutGuide type="top" id="A76-0C-hsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="6kr-Va-viH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oBO-CH-cg2">
+                    <view key="view" contentMode="scaleToFill" id="3WT-1J-lbK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Where do you want to go?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIf-ae-h5h">
-                                <rect key="frame" x="20" y="34" width="560" height="63"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyD-ed-v9s">
-                                <rect key="frame" x="189" y="130" width="209" height="46"/>
-                                <color key="backgroundColor" red="0.1144914553" green="0.5" blue="0.09739612584" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
-                                <state key="normal" title="AFRICA">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="AfricaButtonPressed:" destination="tGz-AA-8pk" eventType="touchUpInside" id="1ue-sq-zmw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaM-tN-x6c">
-                                <rect key="frame" x="278" y="207" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqI-xg-Q4W">
-                                <rect key="frame" x="277" y="275" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-qt-3pf">
-                                <rect key="frame" x="277" y="334" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKb-vw-JqL">
-                                <rect key="frame" x="277" y="387" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXI-kt-Tqr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HIf-ae-h5h" firstAttribute="leading" secondItem="oBO-CH-cg2" secondAttribute="leadingMargin" id="DTS-ci-OQi"/>
-                            <constraint firstItem="HIf-ae-h5h" firstAttribute="trailing" secondItem="oBO-CH-cg2" secondAttribute="trailingMargin" id="SG0-jA-kj3"/>
-                            <constraint firstItem="HIf-ae-h5h" firstAttribute="top" secondItem="Rnn-vq-bMx" secondAttribute="bottom" constant="14" id="aMt-Kx-jde"/>
+                            <constraint firstItem="SXI-kt-Tqr" firstAttribute="leading" secondItem="3WT-1J-lbK" secondAttribute="leadingMargin" constant="-20" id="6yF-Iq-cO4"/>
+                            <constraint firstItem="6kr-Va-viH" firstAttribute="top" secondItem="SXI-kt-Tqr" secondAttribute="bottom" id="BgF-eT-ATj"/>
+                            <constraint firstItem="SXI-kt-Tqr" firstAttribute="top" secondItem="3WT-1J-lbK" secondAttribute="topMargin" id="D4N-c5-4gc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SXI-kt-Tqr" secondAttribute="trailing" constant="-20" id="xh2-Cd-mGX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="youtubeWebView" destination="SXI-kt-Tqr" id="PdT-8P-rLc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4AJ-uY-p6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3si-gO-bWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="490"/>
+            <point key="canvasLocation" x="1270" y="-212"/>
         </scene>
     </scenes>
 </document>
