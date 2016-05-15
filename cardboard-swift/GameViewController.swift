@@ -1,6 +1,7 @@
 
 import GLKit
 import OpenGLES
+import CoreMotion
 
 let UNIFORM_MODELVIEWPROJECTION_MATRIX = 0
 let UNIFORM_NORMAL_MATRIX = 1
@@ -25,9 +26,17 @@ class GameViewController: CSViewController, CSStereoRendererDelegate
     override func viewDidLoad()
     {
         rendererDelegate = self
-        
         super.viewDidLoad()
+        let magnetListener = VRMagnetSensor()
+        
+        magnetListener.callback = { type in
+            // will print MAGNETIC SENSOR REPORTED onPress
+            print("MAGNETIC SENSOR REPORTED \(type)")
+        }
     }
+    
+    
+    
     
     func setupRendererWithView(view:GLKView)
     {
@@ -266,3 +275,15 @@ var gCubeVertexData: [GLfloat] = [
     -0.5, -0.5, -0.5,      0.0, 0.0, -1.0,
     -0.5, 0.5, -0.5,        0.0, 0.0, -1.0
 ]
+
+
+
+
+
+
+
+
+
+
+
+
