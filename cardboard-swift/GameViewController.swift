@@ -2,13 +2,17 @@
 import GLKit
 import OpenGLES
 import CoreMotion
+import CoreLocation
 
 let UNIFORM_MODELVIEWPROJECTION_MATRIX = 0
 let UNIFORM_NORMAL_MATRIX = 1
 var uniforms = [GLint](count: 2, repeatedValue: 0)
 
-class GameViewController: CSViewController, CSStereoRendererDelegate
+class GameViewController: CSViewController, CSStereoRendererDelegate,CLLocationManagerDelegate
 {
+    var CLManager: CLLocationManager!
+    var magnetX: CLHeadingComponentValue = 0.0
+    
     var program: GLuint = 0
     
     var headViewMatrix:GLKMatrix4 = GLKMatrix4Identity
@@ -27,15 +31,35 @@ class GameViewController: CSViewController, CSStereoRendererDelegate
     {
         rendererDelegate = self
         super.viewDidLoad()
-        let magnetListener = VRMagnetSensor()
         
-        magnetListener.callback = { type in
-            // will print MAGNETIC SENSOR REPORTED onPress
-            print("MAGNETIC SENSOR REPORTED \(type)")
-        }
+        CLManager = CLLocationManager()
+        CLManager.delegate = self
+        CLManager.startUpdatingHeading()
+        
+//        let magnetListener = VRMagnetSensor()
+        
+//        magnetListener.callback = { type in
+//            // will print MAGNETIC SENSOR REPORTED onPress
+//            print("MAGNETIC SENSOR REPORTED \(type)")
+//            if (self.CLManager.heading != 0.0){
+//                let sensorInterval = NSTimeInterval(0.8)
+//                
+//                print(self.magnetX)
+//            }
+//        }
+        
+        
     }
     
-    
+    func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        
+        //0 is North, 90 is east
+//        print("magnetic heading \(newHeading.magneticHeading)")
+        print("x-dir: \(newHeading.x)")
+        print("y-dir: \(newHeading.y)")
+        print("z-dir: \(newHeading.z)")
+        print("----------------------")
+    }
     
     
     func setupRendererWithView(view:GLKView)

@@ -8,13 +8,17 @@
 
 import Foundation
 import CoreMotion
+import CoreLocation
 
 
-public class VRMagnetSensor  {
+public class VRMagnetSensor {
     
+    let CLManager = CLLocationManager()
     let manager = CMMotionManager()
     var previousMagnetData = ( x:0.0, y:0.0, z:0.0 )
     var callback:((type:String) ->())?
+    
+    var magnetX: CLHeadingComponentValue = 0.0
     
     init() {
         
@@ -36,6 +40,11 @@ public class VRMagnetSensor  {
                 }
                 self.previousMagnetData = ( x:field.x, y:field.y, z:field.z )
             })
+        }
+        
+
+        if (CLManager.heading != 0.0){
+            print(magnetX)
         }
         
     }
