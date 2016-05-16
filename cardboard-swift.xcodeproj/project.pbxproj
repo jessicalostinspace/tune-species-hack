@@ -35,6 +35,10 @@
 		FCBDCA4F1CE7D73B00720C24 /* VRMagnetSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBDCA4E1CE7D73B00720C24 /* VRMagnetSensor.swift */; };
 		FCBDCA511CE7D9AD00720C24 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBDCA501CE7D9AD00720C24 /* LocationViewController.swift */; };
 		FCBDCA531CE80ADB00720C24 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBDCA521CE80ADB00720C24 /* YoutubeViewController.swift */; };
+		FCF33E8A1CEA45FB00C3889C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF33E851CEA45FB00C3889C /* Alamofire.framework */; };
+		FCF33E8B1CEA45FB00C3889C /* Pods_cardboard_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF33E861CEA45FB00C3889C /* Pods_cardboard_swift.framework */; };
+		FCF33E8C1CEA45FB00C3889C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF33E871CEA45FB00C3889C /* SwiftyJSON.framework */; };
+		FCF33E8D1CEA45FB00C3889C /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF33E881CEA45FB00C3889C /* YouTubePlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		FCBDCA4E1CE7D73B00720C24 /* VRMagnetSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRMagnetSensor.swift; sourceTree = "<group>"; };
 		FCBDCA501CE7D9AD00720C24 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		FCBDCA521CE80ADB00720C24 /* YoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		FCF33E851CEA45FB00C3889C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/JessicaW/Library/Developer/Xcode/DerivedData/cardboard-swift-gzyylnalcguparhkqciibmwkmrzl/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<absolute>"; };
+		FCF33E861CEA45FB00C3889C /* Pods_cardboard_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pods_cardboard_swift.framework; path = "/Users/JessicaW/Library/Developer/Xcode/DerivedData/cardboard-swift-gzyylnalcguparhkqciibmwkmrzl/Build/Products/Debug-iphonesimulator/Pods_cardboard_swift.framework"; sourceTree = "<absolute>"; };
+		FCF33E871CEA45FB00C3889C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/JessicaW/Library/Developer/Xcode/DerivedData/cardboard-swift-gzyylnalcguparhkqciibmwkmrzl/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
+		FCF33E881CEA45FB00C3889C /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = YouTubePlayer.framework; path = "/Users/JessicaW/Library/Developer/Xcode/DerivedData/cardboard-swift-gzyylnalcguparhkqciibmwkmrzl/Build/Products/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF33E8D1CEA45FB00C3889C /* YouTubePlayer.framework in Frameworks */,
+				FCF33E8C1CEA45FB00C3889C /* SwiftyJSON.framework in Frameworks */,
 				79F707508D1DBAE0E25A6CF1 /* Pods_cardboard_swift.framework in Frameworks */,
+				FCF33E8A1CEA45FB00C3889C /* Alamofire.framework in Frameworks */,
+				FCF33E8B1CEA45FB00C3889C /* Pods_cardboard_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +130,7 @@
 				B89A01221C5FBA4D00B7D90F /* Shader.fsh */,
 				B89A01241C5FBA4D00B7D90F /* Shader.vsh */,
 				B89A01261C5FBA4D00B7D90F /* GameViewController.swift */,
+				FCF33E891CEA45FB00C3889C /* Products */,
 				FCBDCA4E1CE7D73B00720C24 /* VRMagnetSensor.swift */,
 				B89A01281C5FBA4D00B7D90F /* Main.storyboard */,
 				B89A012B1C5FBA4D00B7D90F /* Assets.xcassets */,
@@ -167,6 +180,18 @@
 				B89A01921C63F78300B7D90F /* SO3Util.swift */,
 			);
 			name = Math;
+			sourceTree = "<group>";
+		};
+		FCF33E891CEA45FB00C3889C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCF33E851CEA45FB00C3889C /* Alamofire.framework */,
+				FCF33E861CEA45FB00C3889C /* Pods_cardboard_swift.framework */,
+				FCF33E871CEA45FB00C3889C /* SwiftyJSON.framework */,
+				FCF33E881CEA45FB00C3889C /* YouTubePlayer.framework */,
+			);
+			name = Products;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 		FD74548E21CE2866FE9383FE /* Pods */ = {

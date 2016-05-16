@@ -20,7 +20,7 @@ class YoutubeViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let url = NSURL (string: "http://192.168.128.94:8000")
+        let url = NSURL (string: "http://192.168.1.211:8000")
         let requestObj = NSURLRequest(URL: url!)
         print(requestObj)
         youtubeWebView.loadRequest(requestObj)
