@@ -7,4 +7,4 @@ The corresponding ExpressJS back-end used for a UIWebview can be found at [Tune 
 
 ##Collaborators
 
-Dang Trinh, Lauren Antilla, Christa Joy Marie Jaeger: Built out the front-end in Xcode and mocked up the front-end
+Dang Trinh, Lauren Antilla, Christa Joy Marie Jaeger: Built out the front-end in Xcode and mocked up the wireframe with [Invis.io](https://invis.io/467BBMHSW)
